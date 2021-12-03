@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document id="DDI-MedLine.d196">
+    <sentence id="DDI-MedLine.d196.s0" text="Single-dose bioequivalence of 105-mg fenofibric acid tablets versus 145-mg fenofibrate tablets under fasting and fed conditions: a report of two phase I, open-label, single-dose, randomized, crossover clinical trials.&#xd;&#xa;">
+        <entity id="DDI-MedLine.d196.s0.e0" charOffset="37-51"
+            type="drug" text="fenofibric acid"/>
+        <entity id="DDI-MedLine.d196.s0.e1" charOffset="75-85"
+            type="drug" text="fenofibrate"/>
+        <pair id="DDI-MedLine.d196.s0.p0" e1="DDI-MedLine.d196.s0.e0"
+            e2="DDI-MedLine.d196.s0.e1" ddi="false"/>
+    </sentence>
+    <sentence id="DDI-MedLine.d196.s1" text="Fenofibrate is used to treat primary hypercholesterolemia, mixed lipidemia, and hypertriglyceridemia in adults who do not respond to nonpharmacologic measures. ">
+        <entity id="DDI-MedLine.d196.s1.e0" charOffset="0-10"
+            type="drug" text="Fenofibrate"/>
+    </sentence>
+    <sentence id="DDI-MedLine.d196.s2" text="Fenofibrate is a prodrug that is rapidly and completely hydrolyzed to fenofibric acid, the active moiety. ">
+        <entity id="DDI-MedLine.d196.s2.e0" charOffset="0-10"
+            type="drug" text="Fenofibrate"/>
+        <entity id="DDI-MedLine.d196.s2.e1" charOffset="70-84"
+            type="drug_n" text="fenofibric acid"/>
+        <pair id="DDI-MedLine.d196.s2.p0" e1="DDI-MedLine.d196.s2.e0"
+            e2="DDI-MedLine.d196.s2.e1" ddi="false"/>
+    </sentence>
+    <sentence id="DDI-MedLine.d196.s3" text="A new orally administered agent, fenofibric acid, was developed as an alternative to fenofibrate.">
+        <entity id="DDI-MedLine.d196.s3.e0" charOffset="33-47"
+            type="drug" text="fenofibric acid"/>
+        <entity id="DDI-MedLine.d196.s3.e1" charOffset="85-95"
+            type="drug" text="fenofibrate"/>
+        <pair id="DDI-MedLine.d196.s3.p0" e1="DDI-MedLine.d196.s3.e0"
+            e2="DDI-MedLine.d196.s3.e1" ddi="false"/>
+    </sentence>
+    <sentence id="DDI-MedLine.d196.s4" text="Two separate studies were conducted to evaluate the bioequivalence of fenofibric acid relative to fenofibrate under fasted and fed (standard breakfast) conditions, characterize the pharmacokinetic profile, and assess the safety and tolerability of fenofibric acid. ">
+        <entity id="DDI-MedLine.d196.s4.e0" charOffset="70-84"
+            type="drug" text="fenofibric acid"/>
+        <entity id="DDI-MedLine.d196.s4.e1" charOffset="98-108"
+            type="drug" text="fenofibrate"/>
+        <entity id="DDI-MedLine.d196.s4.e2" charOffset="248-262"
+            type="drug" text="fenofibric acid"/>
+        <pair id="DDI-MedLine.d196.s4.p0" e1="DDI-MedLine.d196.s4.e0"
+            e2="DDI-MedLine.d196.s4.e1" ddi="false"/>
+        <pair id="DDI-MedLine.d196.s4.p1" e1="DDI-MedLine.d196.s4.e0"
+            e2="DDI-MedLine.d196.s4.e2" ddi="false"/>
+        <pair id="DDI-MedLine.d196.s4.p2" e1="DDI-MedLine.d196.s4.e1"
+            e2="DDI-MedLine.d196.s4.e2" ddi="false"/>
+    </sentence>
+    <sentence id="DDI-MedLine.d196.s5" text="In study 1 (fasted), during each study period, volunteers received a single 105-mg dose of fenofibric acid or single 145-mg dose of fenofibrate (depending on their randomization scheme) after an overnight fast (a minimum fast of 10 hours). ">
+        <entity id="DDI-MedLine.d196.s5.e0" charOffset="91-105"
+            type="drug" text="fenofibric acid"/>
+        <entity id="DDI-MedLine.d196.s5.e1" charOffset="132-142"
+            type="drug" text="fenofibrate"/>
+        <pair id="DDI-MedLine.d196.s5.p0" e1="DDI-MedLine.d196.s5.e0"
+            e2="DDI-MedLine.d196.s5.e1" ddi="false"/>
+    </sentence>
+    <sentence id="DDI-MedLine.d196.s6" text="A 7-day washout period followed the first treatment period, after which the volunteers received the alternate treatment. "/>
+    <sentence id="DDI-MedLine.d196.s7" text="Study 2 followed a similar dosing scheme and differed only in that volunteers received their single dose after being fed a standard meal (575 calories, of which 36% were contributed by fat). "/>
+    <sentence id="DDI-MedLine.d196.s8" text="Serial blood samples in both studies were collected up to 72 hours after drug administration. "/>
+    <sentence id="DDI-MedLine.d196.s9" text="The pharmacokinetic parameters of interest for assessing bioequivalence were AUC(0-t), AUC(0-   ), C(max), and T(max). "/>
+    <sentence id="DDI-MedLine.d196.s10" text="The criterion for a lack of difference between products was a 90% CI between 0.80 and 1.25 for the fenofibric acid:fenofibrate ratios for AUC(0-t), AUC(0-   ), and C(max.) ">
+        <entity id="DDI-MedLine.d196.s10.e0" charOffset="99-113"
+            type="drug" text="fenofibric acid"/>
+        <entity id="DDI-MedLine.d196.s10.e1" charOffset="115-125"
+            type="drug" text="fenofibrate"/>
+        <pair id="DDI-MedLine.d196.s10.p0" e1="DDI-MedLine.d196.s10.e0"
+            e2="DDI-MedLine.d196.s10.e1" ddi="false"/>
+    </sentence>
+    <sentence id="DDI-MedLine.d196.s11" text="Tolerability was assessed by adverse events (AEs), laboratory parameters, vital signs, and physical examinations. "/>
+    <sentence id="DDI-MedLine.d196.s12" text="Volunteers in study 1 (fasted; n = 54) were aged 18 to 43 years; "/>
+    <sentence id="DDI-MedLine.d196.s13" text="19 (35%) were men and 35 (65%) were women; "/>
+    <sentence id="DDI-MedLine.d196.s14" text="mean weight was 155.2 pounds (range, 103.0-267.0 pounds); "/>
+    <sentence id="DDI-MedLine.d196.s15" text="and 48 (89%) were white, 1 (2%) was black, and 5 (9%) were white/American Indian/Alaskan native/Asian. "/>
+    <sentence id="DDI-MedLine.d196.s16" text="Volunteers in study 2 (fed; n = 54) were aged 18 to 43 years; "/>
+    <sentence id="DDI-MedLine.d196.s17" text="27 (50%) were men and 27 (50%) were women; "/>
+    <sentence id="DDI-MedLine.d196.s18" text="mean weight was 161.9 pounds (range, 112.0-225.0 pounds); "/>
+    <sentence id="DDI-MedLine.d196.s19" text="and 51 (94%) were white (including 2 Hispanic) and 3 (6%) were black. "/>
+    <sentence id="DDI-MedLine.d196.s20" text="The 90% CIs about the ratio of the fenofibric acid geometric mean to the fenofibrate geometric mean were within the 80% and 125% limits for the pharmacokinetic parameters C(max), AUC(0-t), and AUC(0-   ) of the ln-transformed data in both study 1 (fasted) and study 2. ">
+        <entity id="DDI-MedLine.d196.s20.e0" charOffset="35-49"
+            type="drug" text="fenofibric acid"/>
+        <entity id="DDI-MedLine.d196.s20.e1" charOffset="73-83"
+            type="drug" text="fenofibrate"/>
+        <pair id="DDI-MedLine.d196.s20.p0" e1="DDI-MedLine.d196.s20.e0"
+            e2="DDI-MedLine.d196.s20.e1" ddi="false"/>
+    </sentence>
+    <sentence id="DDI-MedLine.d196.s21" text="In study 1 (fasted), 14 volunteers (26%) experienced a total of 29 AEs; "/>
+    <sentence id="DDI-MedLine.d196.s22" text="the most common nonlaboratory AEs were dizziness (6%) and headache (4%). "/>
+    <sentence id="DDI-MedLine.d196.s23" text="In study 2, 12 volunteers (22%) experienced a total of 19 AEs; "/>
+    <sentence id="DDI-MedLine.d196.s24" text="the most common nonlaboratory AEs were headache (17%) and dry throat (4%). "/>
+    <sentence id="DDI-MedLine.d196.s25" text="AEs were generally mild or moderate in intensity. "/>
+    <sentence id="DDI-MedLine.d196.s26" text="In these 2 single-dose studies, these healthy volunteers administered a single oral dose of 105-mg fenofibric acid met the US Food and Drug Administration regulatory criteria for assuming bioequivalence to a single oral dose of 145-mg fenofibrate tablets with respect to the rate and extent of fenofibric acid absorption in both fed and fasted states. ">
+        <entity id="DDI-MedLine.d196.s26.e0" charOffset="99-113"
+            type="drug" text="fenofibric acid"/>
+        <entity id="DDI-MedLine.d196.s26.e1" charOffset="235-245"
+            type="drug" text="fenofibrate"/>
+        <entity id="DDI-MedLine.d196.s26.e2" charOffset="294-308"
+            type="drug" text="fenofibric acid"/>
+        <pair id="DDI-MedLine.d196.s26.p0" e1="DDI-MedLine.d196.s26.e0"
+            e2="DDI-MedLine.d196.s26.e1" ddi="false"/>
+        <pair id="DDI-MedLine.d196.s26.p1" e1="DDI-MedLine.d196.s26.e0"
+            e2="DDI-MedLine.d196.s26.e2" ddi="false"/>
+        <pair id="DDI-MedLine.d196.s26.p2" e1="DDI-MedLine.d196.s26.e1"
+            e2="DDI-MedLine.d196.s26.e2" ddi="false"/>
+    </sentence>
+    <sentence id="DDI-MedLine.d196.s27" text="Fenofibric acid at the dose studied was well tolerated in this population.">
+        <entity id="DDI-MedLine.d196.s27.e0" charOffset="0-14"
+            type="drug" text="Fenofibric acid"/>
+    </sentence>
+</document>
