@@ -1,0 +1,32 @@
+12907309|t|Neuroprotective action of MPEP, a selective mGluR5 antagonist, in methamphetamine-induced dopaminergic neurotoxicity is associated with a decrease in dopamine outflow and inhibition of hyperthermia in rats.
+12907309|a|The aim of this study was to examine the role of metabotropic glutamate receptor 5 (mGluR5) in the toxic action of methamphetamine on dopaminergic neurones in rats. Methamphetamine (10 mg/kg sc), administered five times, reduced the levels of dopamine and its metabolites in striatal tissue when measured 72 h after the last injection. A selective antagonist of mGluR5, 2-methyl-6-(phenylethynyl)pyridine (MPEP; 5 mg/kg ip), when administered five times immediately before each methamphetamine injection reversed the above-mentioned methamphetamine effects. A single MPEP (5 mg/kg ip) injection reduced the basal extracellular dopamine level in the striatum, as well as dopamine release stimulated either by methamphetamine (10 mg/kg sc) or by intrastriatally administered veratridine (100 microM). Moreover, it transiently diminished the methamphetamine (10 mg/kg sc)-induced hyperthermia and reduced basal body temperature. MPEP administered into the striatum at high concentrations (500 microM) increased extracellular dopamine levels, while lower concentrations (50-100 microM) were devoid of any effect. The results of this study suggest that the blockade of mGluR5 by MPEP may protect dopaminergic neurones against methamphetamine-induced toxicity. Neuroprotection rendered by MPEP may be associated with the reduction of the methamphetamine-induced dopamine efflux in the striatum due to the blockade of extrastriatal mGluR5, and with a decrease in hyperthermia.
+12907309	26	30	MPEP	Chemical	C121465
+12907309	66	81	methamphetamine	Chemical	D008694
+12907309	103	116	neurotoxicity	Disease	D020258
+12907309	150	158	dopamine	Chemical	D004298
+12907309	185	197	hyperthermia	Disease	D005334
+12907309	269	278	glutamate	Chemical	D018698
+12907309	322	337	methamphetamine	Chemical	D008694
+12907309	372	387	Methamphetamine	Chemical	D008694
+12907309	450	458	dopamine	Chemical	D004298
+12907309	577	611	2-methyl-6-(phenylethynyl)pyridine	Chemical	C121465
+12907309	613	617	MPEP	Chemical	C121465
+12907309	685	700	methamphetamine	Chemical	D008694
+12907309	740	755	methamphetamine	Chemical	D008694
+12907309	774	778	MPEP	Chemical	C121465
+12907309	834	842	dopamine	Chemical	D004298
+12907309	877	885	dopamine	Chemical	D004298
+12907309	915	930	methamphetamine	Chemical	D008694
+12907309	980	991	veratridine	Chemical	D014701
+12907309	1046	1061	methamphetamine	Chemical	D008694
+12907309	1084	1096	hyperthermia	Disease	D005334
+12907309	1133	1137	MPEP	Chemical	C121465
+12907309	1229	1237	dopamine	Chemical	D004298
+12907309	1381	1385	MPEP	Chemical	C121465
+12907309	1428	1443	methamphetamine	Chemical	D008694
+12907309	1452	1460	toxicity	Disease	D064420
+12907309	1490	1494	MPEP	Chemical	C121465
+12907309	1539	1554	methamphetamine	Chemical	D008694
+12907309	1563	1571	dopamine	Chemical	D004298
+12907309	1663	1675	hyperthermia	Disease	D005334
+12907309	CID	D008694	D005334
