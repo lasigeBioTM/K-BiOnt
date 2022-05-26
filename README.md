@@ -37,10 +37,7 @@ However, to make inferences on the models produced or access the processed datas
 
 ## Predict New Data
 
-We need to preprocess our original data to make predictions based on the existing models. We can do this using the initial preprocessing step of the [BiOnt](https://github.com/lasigeBioTM/BiOnt) model. Afterwards, we can get the predictions based on [BiOnt](https://github.com/lasigeBioTM/BiOnt) and [TUP](https://github.com/TaoMiner/joint-kg-recommender). Using our preprocessed models, our system only supports three different types of relations **DRUG/CHEMICAL-DRUG/CHEMICAL**, **HUMAN PHENOTYPE-GENE** AND **CHEMICAL-DISEASE**. Check *data/* to see a sample of the supported data formats for each pair type. 
-
-If your testing data is a small dataset with less than ten different entities, you should consider, when interpreting the final output, that TUP predictions will be skewed to search for the correct answer in the TOP@10. 
-
+You need to preprocess your original data to make predictions based on the existing models. Afterwards, you can get the predictions based on the joined outputs of  [BiOnt](https://github.com/lasigeBioTM/BiOnt) and [TUP](https://github.com/TaoMiner/joint-kg-recommender). Using the preprocessed models, the system only supports three different types of relations **DRUG/CHEMICAL-DRUG/CHEMICAL**, **HUMAN PHENOTYPE-GENE**, and **CHEMICAL-DISEASE**. Check *data/* to see a sample of the supported data formats for each pair type. You can make your predictions referencing the following example:
 
 * $2: pair_type
 * $3: data_to_test
@@ -54,6 +51,8 @@ If your testing data is a small dataset with less than ten different entities, y
 ````
 
 For more options check **predict.sh**.
+
+If your testing data is a small dataset with less than ten different entities, you should consider, when interpreting the final output, that TUP predictions will be skewed to search for the correct answer in the TOP@10. 
 
 ## Reference
 
