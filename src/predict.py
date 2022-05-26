@@ -15,31 +15,33 @@ def main():
 	tup_model_name = sys.argv[4]
 
 	# Preprocess data for BiOnt
-	# os.system('cp -rf ' + data_to_test_location + '/* ../BiOnt/corpora/' + pair_type.lower().replace('-', '_') + '/')
-	# os.chdir('../BiOnt/')
-	# os.system('python3 src/ontologies_embeddings.py preprocess ' + pair_type + ' test corpora/' + pair_type.lower().replace('-', '_') + '/')
-	# os.chdir('../K-BiOnt/')
+	os.system('cp -rf ' + data_to_test_location + '/* ../BiOnt/corpora/' + pair_type.lower().replace('-', '_') + '/')
+	os.chdir('../BiOnt/')
+	os.system('python3 src/ontologies_embeddings.py preprocess ' + pair_type + ' test corpora/' + pair_type.lower().replace('-', '_') + '/')
+	os.chdir('../K-BiOnt/')
 
-	# # Preprocess data for TUP
-	# os.system('python3 src/data_interactions.py ' + pair_type + ' test ' + data_to_test_location)
+	# Preprocess data for TUP
+	os.system('python3 src/data_interactions.py ' + pair_type + ' test ' + data_to_test_location)
 
 	# Run BiOnt
-	# os.system('cp -rf models/biont_models/' + biont_model_name + '* ../BiOnt/models/' + pair_type.lower().replace('-', '_') + '/')
-	# os.chdir('../BiOnt/')
-	# os.system('python3 src/ontologies_embeddings.py test ' + pair_type + ' ' + biont_model_name +
-	# ' corpora/' + pair_type.lower().replace('-', '_') + '/ words wordnet concatenation_ancestors common_ancestors')
-	# os.chdir('../K-BiOnt/')
-	#
-	# # Run TUP
-	# os.system('cp -rf models/tup_models/' + tup_model_name + '* ../joint-kg-recommender/log/')
-	# os.system('touch corpora/to_test/train.dat | true')
-	# os.system('mv corpora/to_test/ corpora/ml1m')
-	# os.chdir('../joint-kg-recommender/')
-	# os.system('python3 run_item_recommendation.py -model_type transup -dataset ml1m -data_path ../K-BiOnt/corpora/ \
-	# -log_path log/ -topn 10 -eval_only_mode -load_experiment_name ' + tup_model_name + ' -rec_test_files \
-	# test.dat -use_st_gumbel -nohas_visualization -is_report')
-	# os.chdir('../K-BiOnt/')
-	# os.system('mv corpora/ml1m/ corpora/to_test/')
+	os.system('cp -rf models/biont_models/' + biont_model_name + '* ../BiOnt/models/' + pair_type.lower().replace('-', '_') + '/')
+	os.chdir('../BiOnt/')
+	os.system('rm results/' + pair_type.lower().replace('-', '_') + '/* | true')
+	os.system('python3 src/ontologies_embeddings.py test ' + pair_type + ' ' + biont_model_name +
+	' corpora/' + pair_type.lower().replace('-', '_') + '/ words wordnet concatenation_ancestors common_ancestors')
+	os.chdir('../K-BiOnt/')
+
+	# Run TUP
+	os.system('cp -rf models/tup_models/' + tup_model_name + '* ../joint-kg-recommender/log/')
+	os.system('touch corpora/to_test/train.dat | true')
+	os.system('mv corpora/to_test/ corpora/ml1m')
+	os.chdir('../joint-kg-recommender/')
+	os.system('rm log/* | true')
+	os.system('python3 run_item_recommendation.py -model_type transup -dataset ml1m -data_path ../K-BiOnt/corpora/ \
+	-log_path log/ -topn 10 -eval_only_mode -load_experiment_name ' + tup_model_name + ' -rec_test_files \
+	test.dat -use_st_gumbel -nohas_visualization -is_report')
+	os.chdir('../K-BiOnt/')
+	os.system('mv corpora/ml1m/ corpora/to_test/')
 
 	# Final Joined Predictions
 	os.system('cp ../joint-kg-recommender/log/ml1m-*.log results/ | true')

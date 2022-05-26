@@ -149,9 +149,9 @@ def get_sentence_entities(base_dir):
                         save_entity_2 = []
                         for entity in entities_sentence:
                             if entity[5] in pair[0]:
-                                save_entity_1.append(entity[5])
+                                save_entity_1.append([sentence[0] + '.e' + str(entity[0]), entity[5], entity[3]])
                             elif entity[5] in pair[1]:
-                                save_entity_2.append(entity[5])
+                                save_entity_2.append([sentence[0] + '.e' + str(entity[0]), entity[5], entity[3]])
 
                         if save_entity_1 and save_entity_2:
                             for element_1 in save_entity_1:
@@ -169,9 +169,9 @@ def get_sentence_entities(base_dir):
                     check_if_possible_cid = []
                     for entity in entities_sentence:
                         if entity[4] == 'Chemical':
-                            save_entities_list_chemicals.append(entity[5])
+                            save_entities_list_chemicals.append([sentence[0] + '.e' + str(entity[0]), entity[5], entity[3]])
                         elif entity[4] == 'Disease':
-                            save_entities_list_diseases.append(entity[5])
+                            save_entities_list_diseases.append([sentence[0] + '.e' + str(entity[0]), entity[5], entity[3]])
                         check_if_possible_cid.append(entity[4])
 
                     if len(set(check_if_possible_cid)) == 2:

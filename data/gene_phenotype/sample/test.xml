@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<document id="expert_test">
+  <sentence id="s0" text="In the present study, we characterize negative regulation of transcription by RNA polymerase II inhibition activity of the brain-permeable compound AK7 and examine the efficacy of this small molecule in models of Parkinson's disease, amyotrophic lateral sclerosis and cerebral ischemia.">
+    <entity charOffset="38-95" id="s0.e0" ontology_id="GO_0000122" text="negative regulation of transcription by RNA polymerase II" type="GO"/>
+    <entity charOffset="268-285" id="s0.e1" ontology_id="HP_0002637" text="cerebral ischemia" type="HP"/>
+    <pair e1="s0.e0" e2="s0.e1" id="s0.p0" relation="false"/>
+  </sentence>
+  <sentence id="s1" text="Results after perturbing positive regulation of peptidyl-serine phosphorylation activity suggests its involvement in cancer cell migration, proliferation, and cytoskeleton remodeling which makes it a potential therapeutic target for cancer treatments">
+    <entity charOffset="25-79" id="s1.e0" ontology_id="GO_0033138" text="positive regulation of peptidyl-serine phosphorylation" type="GO"/>
+    <entity charOffset="117-123" id="s1.e1" ontology_id="HP_0002664" text="cancer" type="HP"/>
+    <pair e1="s1.e0" e2="s1.e1" id="s1.p0" relation="true"/>
+  </sentence>
+  <sentence id="s2" text="positive regulation of peptidyl-serine phosphorylation is also known for its dual role in cancer as pro- and anti-proliferative in addition to metastasis.">
+    <entity charOffset="0-54" id="s2.e0" ontology_id="GO_0033138" text="positive regulation of peptidyl-serine phosphorylation" type="GO"/>
+    <entity charOffset="90-96" id="s2.e1" ontology_id="HP_0002664" text="cancer" type="HP"/>
+    <pair e1="s2.e0" e2="s2.e1" id="s2.p0" relation="true"/>
+  </sentence>
+  <sentence id="s3" text="In this study, we conducted targeted sequencing in 246 clinically heterogeneous patients, mainly with early-onset and/or familial neurodegenerative dementia, using a custom-designed next-generation sequencing panel covering 27 genes known to harbor mutations that can cause different types of dementia, in addition to the detection of negative regulation of protein phosphorylation repeat expansions.">
+    <entity charOffset="66-79" id="s3.e0" ontology_id="HP_0001425" text="heterogeneous" type="HP"/>
+    <entity charOffset="335-381" id="s3.e1" ontology_id="GO_0001933" text="negative regulation of protein phosphorylation" type="GO"/>
+    <pair e1="s3.e0" e2="s3.e1" id="s3.p0" relation="false"/>
+  </sentence>
+  <sentence id="s4" text="Identifying genetic risk alleles for ovarian cancer has had a significant impact on disease prevention strategies; for example it is now routine clinical practice for individuals with germline double-strand break repair via homologous recombination and mitotic cytokinesis mutations to undergo risk reducing salpingo-oophorectomy.">
+    <entity charOffset="45-51" id="s4.e0" ontology_id="HP_0002664" text="cancer" type="HP"/>
+    <entity charOffset="193-248" id="s4.e1" ontology_id="GO_0000724" text="double-strand break repair via homologous recombination" type="GO"/>
+    <pair e1="s4.e0" e2="s4.e1" id="s4.p0" relation="false"/>
+  </sentence>
+  <sentence id="s5" text="Identifying genetic risk alleles for ovarian cancer has had a significant impact on disease prevention strategies; for example it is now routine clinical practice for individuals with germline double-strand break repair via homologous recombination and mitotic cytokinesis mutations to undergo risk reducing salpingo-oophorectomy.">
+    <entity charOffset="45-51" id="s5.e0" ontology_id="HP_0002664" text="cancer" type="HP"/>
+    <entity charOffset="253-272" id="s5.e1" ontology_id="GO_0000281" text="mitotic cytokinesis" type="GO"/>
+    <pair e1="s5.e0" e2="s5.e1" id="s5.p0" relation="false"/>
+  </sentence>
+  <sentence id="s6" text="We then validated the anti-nucleosome disassembly antibody specificity by analyzing additional 305 pediatric and adult meningiomas of various subtypes and 15 non-meningioma clear cell tumors by SMARCE1 immunohistochemistry.">
+    <entity charOffset="27-49" id="s6.e0" ontology_id="GO_0006337" text="nucleosome disassembly" type="GO"/>
+    <entity charOffset="119-129" id="s6.e1" ontology_id="HP_0002858" text="meningioma" type="HP"/>
+    <pair e1="s6.e0" e2="s6.e1" id="s6.p0" relation="true"/>
+  </sentence>
+</document>

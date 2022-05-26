@@ -2,7 +2,7 @@ import os
 import sys
 import numpy as np
 
-from data_interactions import process_interactions_cd, process_interactions_dd  # initial processing script
+from data_interactions import process_interactions_cd, process_interactions_dd, process_interactions_gp  # initial processing script
 import parse_cid_entities  # chemical-disease interactions
 import parse_dd_entities   # drug-drug interactions
 import parse_gp_entities   # gene-phenotype interactions
@@ -45,12 +45,7 @@ def get_item_map(items_file, pair_type=None):
 
     dict_items = {}
     for line in list_items:
-        if pair_type == 'DRUG-DRUG':
-            dict_items[line.split('\t')[-1][:-1]] = line.split('\t')[0]
-        elif pair_type == 'DRUG-DISEASE':
-            dict_items[line.split('\t')[-1][:-1]] = line.split('\t')[0]
-        else:
-            dict_items['HP_' + line.split('\t')[-1][:-1]] = line.split('\t')[0]
+        dict_items[line.split('\t')[-1][:-1]] = line.split('\t')[0]
 
     return dict_items
 
@@ -178,7 +173,8 @@ def process_answers(item_recommendation_file, users_file, items_file, gold_stand
     else:
         assert pair_type == 'GENE-PHENOTYPE'
         dict_model = process_model(model_results_file, pair_type)
-        dict_gold_standard = get_gold_standard_gp(gold_standard_file)
+        dict_gold_standard = parse_gp_entities.get_gold_standard_gp(gold_standard_file)
+        dict_ids_match_items, dict_ids_match_users, count_interactions, entities_dict = process_interactions_gp(gold_standard_file)
 
     # Creating validation file
     validation = open(validation_file, 'w', encoding='utf-8')
@@ -196,20 +192,37 @@ def process_answers(item_recommendation_file, users_file, items_file, gold_stand
     entity_2_item = ''
 
     for key, item in dict_gold_standard.items():
-        if 'disease' in pair_type.lower():
+        if 'disease' in pair_type.lower() or 'gene' in pair_type.lower():
             key = eval(key)
-        #print(dict_model)
+
         try:
-            entity_1_user = dict_users[dict_entities[key[1]]]
-            entity_2_item = dict_items[dict_entities[key[2]]]
+            if 'disease' in pair_type.lower():
+                entity_1_user = dict_users[dict_entities[key[1][1]]]
+                entity_2_item = dict_items[dict_entities[key[2][1]]]
+
+            elif 'gene' in pair_type.lower():
+                entity_1_user = dict_users[key[1].replace('_', ':')]
+                entity_2_item = dict_items[key[2].replace('_', ':')]
+
+            else:
+                entity_1_user = dict_users[dict_entities[key[1].replace('_', ':')]]
+                entity_2_item = dict_items[dict_entities[key[2].replace('_', ':')]]
 
         except KeyError:  # -1
             continue
 
         gold_standard = item
-        model_key_1 = (key[0], key[1], key[2])
-        model_key_2 = (key[0], key[2], key[1])
+        if 'disease' in pair_type.lower():
+            model_key_1 = (key[0], key[1][0], key[2][0])
+            model_key_2 = (key[0], key[2][0], key[1][0])
 
+        elif 'gene' in pair_type.lower():
+            model_key_1 = (key[0][-1], key[0] + '.e0', key[0] + '.e1')
+            model_key_2 = (key[0][-1], key[0] + '.e0', key[0] + '.e1')
+
+        else:
+            model_key_1 = (key[0], key[1], key[2])
+            model_key_2 = (key[0], key[2], key[1])
         try:
             if str(model_key_1) in dict_model:
                 model = dict_model[str(model_key_1)]
@@ -240,7 +253,12 @@ def process_answers(item_recommendation_file, users_file, items_file, gold_stand
             in_top_3 = in_top_5 = in_top_10 = False
 
         if test:
-            line = [str(identifier), key[1], key[2], str(model), str(in_top_3), str(in_top_5), str(in_top_10)]
+            if 'disease' in pair_type.lower():
+                line = [str(identifier), key[1][0], key[2][0], str(model), str(in_top_3), str(in_top_5), str(in_top_10)]
+            elif 'gene' in pair_type.lower():
+                line = [str(identifier), key[0] + '.' + key[1], key[0] + '.' + key[2], str(model), str(in_top_3), str(in_top_5), str(in_top_10)]
+            else:
+                line = [str(identifier), key[1], key[2], str(model), str(in_top_3), str(in_top_5), str(in_top_10)]
         else:
             line = [str(identifier), entity_1_user, entity_2_item, str(model), str(in_top_3), str(in_top_5), str(in_top_10), str(gold_standard)]
         identifier += 1
@@ -317,6 +335,17 @@ def main():
         #                   'corpora/gene_phenotype/ml1m/i_map.dat', 'data/data_test_gene_phenotype_xml/expert_gene.xml',
         #                   'results/biont_results/gene_phenotype/gene_phenotype_relations_identifiers.tsv', 'results/validation_gp.tsv',
         #                 starting_line=71, end_line=1110)
+
+        if to_test == 'test':
+            data_to_test_location = sys.argv[3]
+            process_answers('results/test_transup.log',
+                            'corpora/to_test/u_map.dat',
+                            'corpora/to_test/i_map.dat', data_to_test_location + '/',
+                            'corpora/to_test/i2kg_map.tsv',
+                            data_to_test_location + '/',
+                            'results/test_biont.txt',
+                            'results/results.tsv', starting_line=55, pair_type='GENE-PHENOTYPE', test=True)
+
         #
         # print(statistics('results/validation_items_gp.tsv'))
         # print(metrics('results/validation_items_gp.tsv'))
