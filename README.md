@@ -8,9 +8,9 @@ Our academic paper which describes K-BiOnt in detail can be found [here](https:/
 
 Available versions of pre-trained models are as follows:
 
-* [DRUG-DRUG](https://drive.google.com/file/d/1NC13Q2NYRWxDRUff2CfrU0_QpBo4gzhf/view?usp=sharing)
-* [DRUG-DISEASE](https://drive.google.com/file/d/1kn9c2DGIr7dDLDjUK2WU2GRO8h9E9sNf/view?usp=sharing)
-* [GENE-PHENOTYPE](https://drive.google.com/file/d/17KfDXGxe8mm6e4dBWQT8du2ZIWHkHvgO/view?usp=sharing)
+* [DRUG-DRUG](https://zenodo.org/records/10230021?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjFlZWY4ZTFiLTc1NDItNDg2MC1iY2QwLTkwMzk4Y2QwZDU1MCIsImRhdGEiOnt9LCJyYW5kb20iOiJlMjBmNGFlNjIyNDAwMzViYjRiYmUzMzAxZWQ0ZGNiYiJ9.vvOtRRPXYT0QpO_oczYT1b0mJ6Akz7gRgVTjq8OOqainwqLGVGgFi58djIqOItrJfm0R3k_vaMFVALP3qqq-mg)
+* [DRUG-DISEASE](https://zenodo.org/records/10230021?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjFlZWY4ZTFiLTc1NDItNDg2MC1iY2QwLTkwMzk4Y2QwZDU1MCIsImRhdGEiOnt9LCJyYW5kb20iOiJlMjBmNGFlNjIyNDAwMzViYjRiYmUzMzAxZWQ0ZGNiYiJ9.vvOtRRPXYT0QpO_oczYT1b0mJ6Akz7gRgVTjq8OOqainwqLGVGgFi58djIqOItrJfm0R3k_vaMFVALP3qqq-mg)
+* [GENE-PHENOTYPE](https://zenodo.org/records/10230021?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjFlZWY4ZTFiLTc1NDItNDg2MC1iY2QwLTkwMzk4Y2QwZDU1MCIsImRhdGEiOnt9LCJyYW5kb20iOiJlMjBmNGFlNjIyNDAwMzViYjRiYmUzMzAxZWQ0ZGNiYiJ9.vvOtRRPXYT0QpO_oczYT1b0mJ6Akz7gRgVTjq8OOqainwqLGVGgFi58djIqOItrJfm0R3k_vaMFVALP3qqq-mg)
 
 The training details are described in our academic paper.
 
